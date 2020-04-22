@@ -10,8 +10,9 @@ const routes: Routes = [
     path:'admin',
     component:AdminComponent,
     children:[
-      {path:'', component: UsersComponent},
+      {path: '', component: UsersComponent},
       {path:'blast', component:EmailBlastComponent},
+      
     ]
   }
 ];
