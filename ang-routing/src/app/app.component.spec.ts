@@ -26,10 +26,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('ang-routing');
   });
 
-  it('should render title', () => {
+  it('should render a app-nav in a div tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('ang-routing app is running!');
+    expect(compiled.querySelector('div > app-nav')).toBeDefined('ang-routing app is running!');
   });
 });
